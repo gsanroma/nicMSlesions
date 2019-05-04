@@ -265,6 +265,8 @@ def preprocess_scan(current_folder, options):
     scan = options['tmp_scan']
     try:
         # os.rmdir(os.path.join(current_folder,  'tmp'))
+        print('going to create this:')
+        print(options['tmp_folder'])
         os.mkdir(options['tmp_folder'])
     except:
         if os.path.exists(options['tmp_folder']) is False:
