@@ -118,7 +118,7 @@ for scan in scan_list:
 
     print('SCAN IS: %s' % scan)
     options['tmp_scan'] = scan
-    current_folder = os.path.join(options['train_folder'], os.path.splitext(scan)[0])
+    current_folder = os.path.join(options['train_folder'])#, os.path.splitext(scan)[0])
     options['tmp_folder'] = os.path.normpath(
         os.path.join(current_folder,  'tmp'))
 
