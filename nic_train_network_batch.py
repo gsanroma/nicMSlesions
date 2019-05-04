@@ -49,6 +49,8 @@ container = args.docker
 CURRENT_PATH = CURRENT_PATH = os.path.split(os.path.realpath(__file__))[0]
 sys.path.append(os.path.join(CURRENT_PATH, 'libs'))
 
+print('CURRENT_PATH = %s' % CURRENT_PATH)
+
 # load default options and update them with user information
 default_config = ConfigParser.SafeConfigParser()
 default_config.read(os.path.join(CURRENT_PATH, 'config', 'default.cfg'))
