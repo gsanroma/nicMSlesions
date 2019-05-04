@@ -116,6 +116,7 @@ for scan in scan_list:
     # move things to a tmp folder before starting
     # --------------------------------------------------
 
+    print('SCAN IS: %s' % scan)
     options['tmp_scan'] = scan
     current_folder = os.path.join(options['train_folder'], scan)
     options['tmp_folder'] = os.path.normpath(
